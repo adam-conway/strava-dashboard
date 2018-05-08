@@ -65,11 +65,11 @@ def stub_omniauth
     },
     extra: {
       raw_info: {
-        id: '1234',
+        id: '8722083',
       }
     },
     credentials: {
-      token: '3465g5g7',
+      token: ENV["strava_my_token"],
     }
     })
 end
