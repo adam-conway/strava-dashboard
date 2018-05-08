@@ -42,9 +42,12 @@
         <li class="nav-item">
           <%= link_to "Logout", logout_path, method: :delete %>
         </li>
+        <li class="nav-item">
+          <p> <%= current_user.email %></p>
+        </li>
       <% else %>
         <li class="nav-item">
-          <a class="nav-link" href="/auth/strava">Log in to Strava</a>
+          <a class="nav-link" href="/auth/strava">Log in with Strava</a>
         </li>
       <% end %>
     </ul>
