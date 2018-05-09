@@ -1,13 +1,13 @@
 require "rails_helper"
 
-describe 'user sees last 10 rides' do
+describe 'user sees last n rides' do
   scenario 'they log in and see the homepage with their rides' do
     VCR.use_cassette("Seeing-ten-most-recent-rides") do
       user = create(:user)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-      visit '/'
-      expect(current_path).to eq('/')
+      visit '/dashboard'
+      expect(current_path).to eq('/dashboard')
       expect(page).to have_content('Your last 10 rides')
 
       expect(page).to have_css(".ride", count: 10)
