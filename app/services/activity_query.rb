@@ -1,16 +1,21 @@
 class ActivityQuery
-  def initialize(current_user)
+  attr_reader :token, :number_requested
+
+  def initialize(current_user, number_requested = 10)
     @token = current_user.token
+    @number_requested = number_requested
   end
 
-  def last_ten
-    response = Faraday.get("https://www.strava.com/api/v3/athlete/activities?page1=&per_page=10&access_token=#{token}")
-    raw_activity_data = JSON.parse(response.body, symbolize_names: true)
-    raw_activity_data.map do |raw_activity|
+  def activities
+    raw_activities = service.raw_activity_data
+    raw_activities.map do |raw_activity|
       Activity.new(raw_activity)
     end
   end
 
   private
-    attr_reader :token
+
+    def service
+      @service ||= ActivityService.new(token, number_requested)
+    end
 end

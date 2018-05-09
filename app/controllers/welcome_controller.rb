@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @activities = ActivityQuery.new(current_user) if current_user
+    @activity_query = ActivityQuery.new(current_user) if current_user
   end
 end
