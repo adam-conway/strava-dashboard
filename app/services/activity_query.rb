@@ -1,6 +1,6 @@
 class ActivityQuery
   attr_reader :token, :number_requested
-  
+
   def initialize(current_user, number_requested = 10)
     @token = current_user.token
     @number_requested = number_requested
@@ -16,6 +16,6 @@ class ActivityQuery
   private
 
     def service
-      @service ||= ActivityService.new(number_requested, token)
+      @service ||= ActivityService.new(token, number_requested)
     end
 end

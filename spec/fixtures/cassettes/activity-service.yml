@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.strava.com/api/v3/athlete/activities?access_token=<STRAVA_API_KEY>&page1=&per_page=12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 09 May 2018 22:02:13 GMT
+      Etag:
+      - W/"327faa7b137194199b953e853ebf658a"
+      Status:
+      - 200 OK
+      Strava-Athlete-Upload-Version:
+      - 32886900e88bc2bbb73a1cedb7c2da92
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '600,30000'
+      X-Ratelimit-Usage:
+      - '1,47'
+      X-Request-Id:
+      - 2326f40e-7ed6-4a15-8d5f-18f5cf487f82
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '3085'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Afternoon
+        Ride","distance":9722.9,"moving_time":1637,"elapsed_time":1773,"total_elevation_gain":63.0,"type":"Ride","workout_type":null,"id":1558877755,"external_id":"garmin_push_2684544378","upload_id":1676458632,"start_date":"2018-05-08T21:45:12Z","start_date_local":"2018-05-08T15:45:12Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-105.0],"end_latlng":[39.75,-104.9],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-105.0,"achievement_count":5,"kudos_count":2,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1558877755","summary_polyline":"_dsqFx`z_SlIr@tl@uu@^eFZgdDgB_J@kHuC[yGkNdAmKnFuKw@yQtAcWqCyIoNoBAmyGv@}B","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.939,"max_speed":8.4,"average_cadence":74.6,"average_temp":21.0,"average_watts":85.5,"kilojoules":139.9,"device_watts":false,"has_heartrate":false,"elev_high":1665.0,"elev_low":1615.4,"pr_count":0,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Morning
+        Ride","distance":9804.5,"moving_time":1779,"elapsed_time":1860,"total_elevation_gain":14.0,"type":"Ride","workout_type":null,"id":1557678557,"external_id":"garmin_push_2683118979","upload_id":1675242289,"start_date":"2018-05-08T12:13:03Z","start_date_local":"2018-05-08T06:13:03Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.89],"end_latlng":[39.75,-105.0],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.89,"achievement_count":1,"kudos_count":1,"comment_count":4,"athlete_count":1,"photo_count":0,"map":{"id":"a1557678557","summary_polyline":"k~qqFfhf_SsDhA]lDBruGfAbC`LVnDrJ}AdW|@pPwHhULzDbDxGZfISbxDmh@rv@xAeD","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.511,"max_speed":8.8,"average_cadence":71.9,"average_temp":10.0,"average_watts":40.3,"kilojoules":71.7,"device_watts":false,"has_heartrate":false,"elev_high":1657.0,"elev_low":1596.2,"pr_count":0,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Afternoon
+        Ride","distance":9316.1,"moving_time":1526,"elapsed_time":1774,"total_elevation_gain":57.0,"type":"Ride","workout_type":null,"id":1556703080,"external_id":"garmin_push_2681960044","upload_id":1674230512,"start_date":"2018-05-07T22:35:24Z","start_date_local":"2018-05-07T16:35:24Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.99],"end_latlng":[39.75,-104.9],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.99,"achievement_count":5,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1556703080","summary_polyline":"onrqFvyy_St_@wh@fCeTq@_d@^kuBeBcIDgIwCa@{GsNv@wH|FgMi@sTjAuTkDwJuM_AC_}GdAc@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":6.105,"max_speed":11.9,"average_cadence":75.6,"average_temp":22.0,"average_watts":84.1,"kilojoules":128.3,"device_watts":false,"has_heartrate":false,"elev_high":1603.4,"elev_low":1559.6,"pr_count":3,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Morning
+        Ride","distance":10322.3,"moving_time":1706,"elapsed_time":1787,"total_elevation_gain":17.0,"type":"Ride","workout_type":null,"id":1534706069,"external_id":"garmin_push_2655403920","upload_id":1651633083,"start_date":"2018-04-27T12:36:45Z","start_date_local":"2018-04-27T06:36:45Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.9],"end_latlng":[39.75,-105.0],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.9,"achievement_count":1,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1534706069","summary_polyline":"a~qqFjif_SkFrBPjSwML?hz@X|D|L\\HddEtNvAxCnJwAvVz@xPwH`UTjExCxG\\`JUdvDqh@nv@`As@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":6.051,"max_speed":10.6,"average_cadence":75.7,"average_temp":5.0,"average_watts":46.2,"kilojoules":78.8,"device_watts":false,"has_heartrate":false,"elev_high":1635.8,"elev_low":1586.2,"pr_count":0,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Afternoon
+        Ride","distance":9496.5,"moving_time":1727,"elapsed_time":1829,"total_elevation_gain":64.0,"type":"Ride","workout_type":null,"id":1533938127,"external_id":"garmin_push_2654455563","upload_id":1650838205,"start_date":"2018-04-26T23:42:45Z","start_date_local":"2018-04-26T17:42:45Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-105.0],"end_latlng":[39.75,-104.9],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-105.0,"achievement_count":5,"kudos_count":1,"comment_count":2,"athlete_count":1,"photo_count":0,"map":{"id":"a1533938127","summary_polyline":"kmrqFfcz_SoAaEh@aBj^mh@`DeB~@qJBcPsAeNGyaCqHOr@}UqF_Kp@yIbGyM}@uOrAoZiDiIuMeAGg}GlCQ","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.499,"max_speed":10.1,"average_cadence":81.9,"average_temp":12.0,"average_watts":78.1,"kilojoules":134.9,"device_watts":false,"has_heartrate":false,"elev_high":1598.8,"elev_low":1548.4,"pr_count":3,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Morning
+        Ride","distance":9971.2,"moving_time":1652,"elapsed_time":1722,"total_elevation_gain":16.0,"type":"Ride","workout_type":null,"id":1532795700,"external_id":"garmin_push_2653114892","upload_id":1649661200,"start_date":"2018-04-26T12:28:37Z","start_date_local":"2018-04-26T06:28:37Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.9],"end_latlng":[39.75,-105.0],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.9,"achievement_count":0,"kudos_count":1,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1532795700","summary_polyline":"y~qqFdif_SiEvAFltAsEp@QrP`F|AH`qDxNlAxCnJ_B~W|@fOoFrMeA~IrDhK\\jI]xwDih@pt@lCy@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":6.036,"max_speed":12.4,"average_cadence":83.4,"average_temp":7.0,"average_watts":48.3,"kilojoules":79.8,"device_watts":false,"has_heartrate":false,"elev_high":1640.8,"elev_low":1584.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Morning
+        Ride","distance":9731.3,"moving_time":1693,"elapsed_time":1756,"total_elevation_gain":17.0,"type":"Ride","workout_type":null,"id":1530827427,"external_id":"garmin_push_2650745871","upload_id":1647614891,"start_date":"2018-04-25T12:13:22Z","start_date_local":"2018-04-25T06:13:22Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.89],"end_latlng":[39.75,-105.0],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.89,"achievement_count":0,"kudos_count":1,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1530827427","summary_polyline":"g~qqFhhf_SwD`AUhE?ntG|@nC|M~@~B~IyAtTx@dS}E|J{AnLnD|I^|HYbxDuh@`v@fBa@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.748,"max_speed":10.4,"average_cadence":76.8,"average_temp":1.0,"average_watts":43.9,"kilojoules":74.3,"device_watts":false,"has_heartrate":false,"elev_high":1636.4,"elev_low":1587.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Afternoon
+        Ride","distance":9853.6,"moving_time":1807,"elapsed_time":1939,"total_elevation_gain":71.0,"type":"Ride","workout_type":null,"id":1519284622,"external_id":"garmin_push_2637044757","upload_id":1635533617,"start_date":"2018-04-19T23:42:38Z","start_date_local":"2018-04-19T17:42:38Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.74,-104.99],"end_latlng":[39.75,-104.9],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.74,"start_longitude":-104.99,"achievement_count":2,"kudos_count":1,"comment_count":0,"athlete_count":2,"photo_count":0,"map":{"id":"a1519284622","summary_polyline":"gpqqFpvx_SeDNfIaKrAefDyCoUoB?wH}Rb@oFpGaOw@wO|@c]wDcGsL}@AmyGBuB|@K","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.453,"max_speed":9.6,"average_cadence":83.2,"average_temp":15.0,"average_watts":76.6,"kilojoules":138.4,"device_watts":false,"has_heartrate":false,"elev_high":1712.2,"elev_low":1616.8,"pr_count":1,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Morning
+        Ride","distance":9955.8,"moving_time":1776,"elapsed_time":1919,"total_elevation_gain":21.0,"type":"Ride","workout_type":null,"id":1516137631,"external_id":"garmin_push_2633465810","upload_id":1632273701,"start_date":"2018-04-18T15:24:10Z","start_date_local":"2018-04-18T09:24:10Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.9],"end_latlng":[39.75,-105.0],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.9,"achievement_count":0,"kudos_count":1,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1516137631","summary_polyline":"gfrqF|tf_SPuBRpTwETo@|AFhIbGfBLtoF`NtApDtJwAzWx@dPuHnTHxEbDvG^fI]lwDuIzKxA~Ec^r[iAtCb@`A","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.606,"max_speed":9.9,"average_cadence":89.6,"average_temp":6.0,"average_watts":45.7,"kilojoules":81.2,"device_watts":false,"has_heartrate":false,"elev_high":1630.6,"elev_low":1580.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Night
+        Ride","distance":9843.2,"moving_time":1702,"elapsed_time":1732,"total_elevation_gain":69.0,"type":"Ride","workout_type":null,"id":1515388049,"external_id":"garmin_push_2632537788","upload_id":1631497543,"start_date":"2018-04-18T06:52:58Z","start_date_local":"2018-04-18T00:52:58Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.99],"end_latlng":[39.75,-104.89],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.99,"achievement_count":4,"kudos_count":2,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1515388049","summary_polyline":"oxqqF`dy_SBcD|JiE|DyDDgBr@zFwBz@aA{Ob@ohDwCsQmCkBaGaNn@iHdGgNu@aRrA}VoDcJoMy@Oe}GtD{A","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.783,"max_speed":8.6,"average_cadence":88.2,"average_temp":4.0,"average_watts":81.3,"kilojoules":138.4,"device_watts":false,"has_heartrate":false,"elev_high":1534.4,"elev_low":1479.4,"pr_count":1,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Morning
+        Ride","distance":9753.0,"moving_time":1607,"elapsed_time":1743,"total_elevation_gain":23.0,"type":"Ride","workout_type":null,"id":1513846748,"external_id":"garmin_push_2630746184","upload_id":1629905032,"start_date":"2018-04-17T13:58:35Z","start_date_local":"2018-04-17T07:58:35Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-104.9],"end_latlng":[39.75,-105.0],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-104.9,"achievement_count":4,"kudos_count":2,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1513846748","summary_polyline":"yfrqFhwf_SlAtqGrMn@tD|JyAfWv@xPaGxMu@bIpDtJ^|L_@zsD}a@dk@yDzI\\_A","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":6.069,"max_speed":10.8,"average_cadence":88.0,"average_temp":14.0,"average_watts":60.5,"kilojoules":97.3,"device_watts":false,"has_heartrate":false,"elev_high":1739.8,"elev_low":1700.4,"pr_count":2,"total_photo_count":0,"has_kudoed":false},{"resource_state":2,"athlete":{"id":8722083,"resource_state":1},"name":"Afternoon
+        Ride","distance":9922.0,"moving_time":1723,"elapsed_time":1849,"total_elevation_gain":70.0,"type":"Ride","workout_type":null,"id":1504812035,"external_id":"garmin_push_2619697558","upload_id":1620490984,"start_date":"2018-04-12T19:11:14Z","start_date_local":"2018-04-12T13:11:14Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-21600.0,"start_latlng":[39.75,-105.0],"end_latlng":[39.75,-104.9],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.75,"start_longitude":-105.0,"achievement_count":5,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a1504812035","summary_polyline":"syrqFbfz_ShB{C^qGdDa@pAkEjGy@UeBlGiKzM{M|ByVTsxC_CcTqCk@aGyNj@gGjG{Nw@gQrAqW{CqIwMi@KkAIc|GbCW","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"b4085148","from_accepted_tag":false,"average_speed":5.759,"max_speed":8.1,"average_cadence":88.9,"average_temp":20.0,"average_watts":81.5,"kilojoules":140.5,"device_watts":false,"has_heartrate":false,"elev_high":1759.8,"elev_low":1628.2,"pr_count":1,"total_photo_count":0,"has_kudoed":false}]'
+    http_version: 
+  recorded_at: Wed, 09 May 2018 22:02:13 GMT
+recorded_with: VCR 4.0.0

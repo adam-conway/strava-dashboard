@@ -1,5 +1,5 @@
 class ActivityService
-  def initialize(limit = 10, token)
+  def initialize(token, limit)
     @token = token
     @limit = limit
   end
