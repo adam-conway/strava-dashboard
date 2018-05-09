@@ -5,8 +5,10 @@ ruby '2.3.6'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
 gem 'faker'
+gem 'faraday'
 gem 'figaro'
 gem 'jbuilder', '~> 2.5'
+gem 'launchy'
 gem 'minitest-rails'
 gem 'omniauth-strava'
 gem 'pg', '>= 0.18', '< 2.0'
@@ -22,6 +24,7 @@ group :development, :test do
   gem 'capybara'
   gem "minitest-rails-capybara"
   gem 'rspec-rails'
+  gem 'factory_bot_rails', '~> 4.0'
 end
 
 group :development do
