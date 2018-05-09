@@ -5,7 +5,7 @@ describe 'user sees last 10 rides' do
     user = create(:user)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-    save_and_open_page
+    visit '/'
     expect(current_path).to eq('/')
     expect(page).to have_content('Your last 10 rides')
 

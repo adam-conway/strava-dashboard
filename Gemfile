@@ -5,6 +5,7 @@ ruby '2.3.6'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
 gem 'faker'
+gem 'faraday'
 gem 'figaro'
 gem 'jbuilder', '~> 2.5'
 gem 'launchy'

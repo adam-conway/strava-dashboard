@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    binding.pry
-    # @rides = RideQuery.new
+    @activities = ActivityQuery.new(current_user) if current_user
   end
 end

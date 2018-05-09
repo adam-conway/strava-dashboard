@@ -1,1 +1,20 @@
-<h2>Your last 10 rides</h2>
+<% if current_user %>
+  <h2>Your last 10 rides</h2>
+
+  <section class='rides'>
+    <% @activities.last_ten.each do |activity| %>
+      <card class='ride'>
+        <ul>
+          <li class="name">Name: <%= activity.name %></li>
+          <li class="start_date">Ride Date: <%= activity.start_date %></li>
+          <li class="distance">Distance: <%= activity.distance %></li>
+          <li class="moving_time">Moving Time: <%= activity.moving_time %></li>
+          <li class="elapsed_time">Elapsed Time: <%= activity.elapsed_time %></li>
+        </ul>
+      </card>
+    <% end %>
+  </section>
+
+<% else %>
+  <h2>Log in with Strava to see your information!<h2>
+<% end %>
