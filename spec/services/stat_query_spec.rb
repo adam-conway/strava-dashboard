@@ -7,7 +7,7 @@ describe StatQuery do
       user = create(:user)
       subject = StatQuery.new(user)
       expect(subject).to be_an StatQuery
-      expect(subject.token).to eq(ENV['strava_my_token'])
+      expect(subject.current_user.token).to eq(ENV['strava_my_token'])
     end
   end
 
