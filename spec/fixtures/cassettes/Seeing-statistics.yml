@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.strava.com/api/v3/athlete?access_token=<STRAVA_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 10 May 2018 16:28:07 GMT
+      Etag:
+      - W/"a563e7da80d27409cc3739131c9d5b80"
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '600,30000'
+      X-Ratelimit-Usage:
+      - '1,12'
+      X-Request-Id:
+      - 444d1dbe-b5c2-45ed-bbf1-4a299f565862
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '801'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":8722083,"username":null,"resource_state":3,"firstname":"Adam","lastname":"Conway","city":"Oakland","state":"California","country":"United
+        States","sex":"M","premium":false,"created_at":"2015-04-16T16:24:17Z","updated_at":"2017-12-25T00:00:07Z","badge_type_id":0,"profile_medium":"https://graph.facebook.com/10155515138087812/picture?height=256\u0026width=256","profile":"https://graph.facebook.com/10155515138087812/picture?height=256\u0026width=256","friend":null,"follower":null,"email":"adam.n.conway@gmail.com","follower_count":13,"friend_count":15,"mutual_friend_count":0,"athlete_type":0,"date_preference":"%m/%d/%Y","measurement_preference":"feet","clubs":[{"id":176219,"resource_state":2,"name":"Pooping
+        Protips","profile_medium":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/3798854/1/medium.jpg","profile":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/3798854/1/large.jpg","cover_photo":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/4521871/1/large.jpg","cover_photo_small":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/4521871/1/small.jpg","sport_type":"cycling","city":"Oakland","state":"California","country":"United
+        States","private":false,"member_count":57,"featured":false,"verified":false,"url":"poopingprotips","membership":"member","admin":false,"owner":false},{"id":207668,"resource_state":2,"name":"Toolbox
+        For Strava","profile_medium":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555276/1/medium.jpg","profile":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555276/1/large.jpg","cover_photo":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555299/2/large.jpg","cover_photo_small":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555299/2/small.jpg","sport_type":"cycling","city":"","state":"","country":"Italia","private":false,"member_count":31561,"featured":false,"verified":false,"url":"stravatoolbox","membership":"member","admin":false,"owner":false}],"ftp":null,"weight":72.5748,"bikes":[{"id":"b4085148","primary":true,"name":"Serotta","resource_state":2,"distance":2967428.0}],"shoes":[],"subscription_permissions":[]}'
+    http_version: 
+  recorded_at: Thu, 10 May 2018 16:28:07 GMT
+recorded_with: VCR 4.0.0
