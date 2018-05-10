@@ -4,7 +4,7 @@ class StatService
     @uid = current_user.uid
   end
 
-  def raw_stat_data
+  def raw_stat_data 
     JSON.parse(query.body, symbolize_names: true)
   end
   private
