@@ -4,8 +4,8 @@ require './app/models/profile.rb'
 describe Profile do
   let(:attributes) {
     {
-      first_name: "Waspin",
-      last_name: "Conway",
+      firstname: "Waspin",
+      lastname: "Conway",
       city: "Oakland",
       state: "CA",
       created_at: "2017-11-14T02:30:05Z",
@@ -20,7 +20,7 @@ describe Profile do
       expect(subject.last_name).to eq("Conway")
       expect(subject.city).to eq("Oakland")
       expect(subject.state).to eq("CA")
-      expect(subject.created_at).to eq("2017-11-14T02:30:05Z")
+      expect(subject.created_at).to eq("November 14, 2017")
       expect(subject.friend_count).to eq(15)
       expect(subject.follower_count).to eq(10)
     end
