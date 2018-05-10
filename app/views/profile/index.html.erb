@@ -1,0 +1,9 @@
+<p>Your profile information</p>
+
+<ul>
+  <li class='name'> Athlete Name: <%= @profile.first_name %> <%= @profile.last_name %></li>
+  <li class='location'> Homebase: <%= @profile.city %>, <%= @profile.state %></li>
+  <li class='profile_creation'> Account created: <%= @profile.created_at %></li>
+  <li class='friend_count'> Number of friends: <%= @profile.friend_count %></li>
+  <li class='follower_count'> Number of followers: <%= @profile.follower_count %></li>
+</ul>
