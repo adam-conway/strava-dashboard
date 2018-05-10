@@ -72,7 +72,7 @@ describe 'user sees statistics' do
         expect(page).to have_css('.cycling')
         within('.cycling') do
           expect(page).to have_css(".biggest_ride_distance")
-          expect(page).to have_css(".biggest_climb_elevation_gains")
+          expect(page).to have_css(".biggest_climb_elevation_gain")
 
           expect(page).to have_css(".number_of_rides")
           expect(page).to have_css(".distance_ridden")
