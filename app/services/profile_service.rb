@@ -11,7 +11,7 @@ class ProfileService
     attr_reader :token
 
     def query
-      Faraday.get("https://www.strava.com/api/v3/athlete/activities?access_token=#{token}")
+      Faraday.get("https://www.strava.com/api/v3/athlete?access_token=#{token}")
     end
 
 end

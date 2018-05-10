@@ -1,5 +1,5 @@
 class ProfileController < ApplicationController
   def index
-    @profile_query = ProfileQuery.new(current_user)
+    @profile = ProfileQuery.new(current_user).profile_information
   end
 end
