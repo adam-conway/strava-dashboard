@@ -12,31 +12,32 @@
 <section class='last_4_weeks'>
   <h2>Last 4 Week Stats</h2>
   <section class='cycling'>
+    <h3>Stats from the last 4 weeks</h3>
     <ul>
-      <li class='number_of_rides'></li>
-      <li class='distance_ridden'></li>
-      <li class='bike_moving_time'> </li>
-      <li class='bike_elapsed_time'></li>
-      <li class='bike_elevation_gain'></li>
+      <li class='number_of_rides'> <%= @stats.recent_number_of_rides %> rides</li>
+      <li class='distance_ridden'> <%= @stats.recent_distance_ridden %></li>
+      <li class='bike_moving_time'> <%= @stats.recent_bike_moving_time %></li>
+      <li class='bike_elapsed_time'> <%= @stats.recent_bike_elapsed_time %></li>
+      <li class='bike_elevation_gain'> <%= @stats.recent_bike_elevation_gain %></li>
     </ul>
   </section>
 
   <section class='running'>
     <ul>
-      <li class='number_of_runs'></li>
-      <li class='distance_ran'></li>
-      <li class='run_moving_time'> </li>
-      <li class='run_elapsed_time'></li>
-      <li class='run_elevation_gain'></li>
+      <li class='number_of_runs'> <%= @stats.recent_number_of_runs %> runs</li>
+      <li class='distance_ran'> <%= @stats.recent_distance_ran %></li>
+      <li class='run_moving_time'> <%= @stats.recent_run_moving_time %></li>
+      <li class='run_elapsed_time'> <%= @stats.recent_run_elapsed_time %></li>
+      <li class='run_elevation_gain'> <%= @stats.recent_run_elevation_gain %></li>
     </ul>
   </section>
 
   <section class='swimming'>
     <ul>
-      <li class='number_of_swims'></li>
-      <li class='distance_swam'></li>
-      <li class='swim_moving_time'> </li>
-      <li class='swim_elapsed_time'></li>
+      <li class='number_of_swims'> <%= @stats.recent_number_of_swims %> swims</li>
+      <li class='distance_swam'> <%= @stats.recent_distance_swam %></li>
+      <li class='swim_moving_time'> <%= @stats.recent_swim_moving_time %></li>
+      <li class='swim_elapsed_time'> <%= @stats.recent_swim_elapsed_time %></li>
     </ul>
   </section>
 </section>
@@ -45,30 +46,30 @@
   <h2>Year-to-date Stats</h2>
   <section class='cycling'>
     <ul>
-      <li class='number_of_rides'></li>
-      <li class='distance_ridden'></li>
-      <li class='bike_moving_time'> </li>
-      <li class='bike_elapsed_time'></li>
-      <li class='bike_elevation_gain'></li>
+      <li class='number_of_rides'> <%= @stats.ytd_number_of_rides %></li>
+      <li class='distance_ridden'> <%= @stats.ytd_distance_ridden %></li>
+      <li class='bike_moving_time'> <%= @stats.ytd_bike_moving_time %></li>
+      <li class='bike_elapsed_time'> <%= @stats.ytd_bike_elapsed_time%></li>
+      <li class='bike_elevation_gain'> <%= @stats.ytd_bike_elevation_gain %></li>
     </ul>
   </section>
 
   <section class='running'>
     <ul>
-      <li class='number_of_runs'></li>
-      <li class='distance_ran'></li>
-      <li class='run_moving_time'> </li>
-      <li class='run_elapsed_time'></li>
-      <li class='run_elevation_gain'></li>
+      <li class='number_of_runs'> <%= @stats.ytd_number_of_runs %></li>
+      <li class='distance_ran'> <%= @stats.ytd_distance_ran %></li>
+      <li class='run_moving_time'> <%= @stats.ytd_run_moving_time %></li>
+      <li class='run_elapsed_time'> <%= @stats.ytd_run_elapsed_time %></li>
+      <li class='run_elevation_gain'> <%= @stats.ytd_run_elevation_gain %></li>
     </ul>
   </section>
 
   <section class='swimming'>
     <ul>
-      <li class='number_of_swims'></li>
-      <li class='distance_swam'></li>
-      <li class='swim_moving_time'> </li>
-      <li class='swim_elapsed_time'></li>
+      <li class='number_of_swims'> <%= @stats.ytd_number_of_swims %></li>
+      <li class='distance_swam'> <%= @stats.ytd_distance_swam %></li>
+      <li class='swim_moving_time'> <%= @stats.ytd_swim_moving_time %></li>
+      <li class='swim_elapsed_time'> <%= @stats.ytd_swim_elapsed_time %></li>
     </ul>
   </section>
 </section>
@@ -77,32 +78,32 @@
   <h2>All Time Stats</h2>
   <section class='cycling'>
     <ul>
-      <li class='biggest_ride_distance'></li>
-      <li class='biggest_climb_elevation_gains'></li>
-      <li class='number_of_rides'></li>
-      <li class='distance_ridden'></li>
-      <li class='bike_moving_time'> </li>
-      <li class='bike_elapsed_time'></li>
-      <li class='bike_elevation_gain'></li>
+      <li class='biggest_ride_distance'> <%= @stats.biggest_ride_distance %></li>
+      <li class='biggest_climb_elevation_gain'> <%= @stats.biggest_climb_elevation_gain %></li>
+      <li class='number_of_rides'> <%= @stats.all_time_number_of_rides %></li>
+      <li class='distance_ridden'> <%= @stats.all_time_distance_ridden %></li>
+      <li class='bike_moving_time'> <%= @stats.all_time_bike_moving_time %></li>
+      <li class='bike_elapsed_time'> <%= @stats.all_time_bike_elapsed_time %></li>
+      <li class='bike_elevation_gain'> <%= @stats.all_time_bike_elevation_gain %></li>
     </ul>
   </section>
 
   <section class='running'>
     <ul>
-      <li class='number_of_runs'></li>
-      <li class='distance_ran'></li>
-      <li class='run_moving_time'> </li>
-      <li class='run_elapsed_time'></li>
-      <li class='run_elevation_gain'></li>
+      <li class='number_of_runs'> <%= @stats.all_time_number_of_runs %></li>
+      <li class='distance_ran'> <%= @stats.all_time_distance_ran %></li>
+      <li class='run_moving_time'> <%= @stats.all_time_run_moving_time %></li>
+      <li class='run_elapsed_time'> <%= @stats.all_time_run_elapsed_time %></li>
+      <li class='run_elevation_gain'> <%= @stats.all_time_run_elevation_gain %></li>
     </ul>
   </section>
 
   <section class='swimming'>
     <ul>
-      <li class='number_of_swims'></li>
-      <li class='distance_swam'></li>
-      <li class='swim_moving_time'> </li>
-      <li class='swim_elapsed_time'></li>
+      <li class='number_of_swims'> <%= @stats.all_time_number_of_swims %></li>
+      <li class='distance_swam'> <%= @stats.all_time_distance_swam %></li>
+      <li class='swim_moving_time'> <%= @stats.all_time_swim_moving_time %></li>
+      <li class='swim_elapsed_time'> <%= @stats.all_time_swim_elapsed_time %></li>
     </ul>
   </section>
 </section>

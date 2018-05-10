@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 10 May 2018 15:50:56 GMT
+      - Thu, 10 May 2018 21:27:12 GMT
       Etag:
-      - W/"5707ee9792cc4d0d0d83d8ab4b4ebc62"
+      - W/"2d0fe4f44484aa14fb838428ac3af9c1"
       Status:
       - 200 OK
       X-Content-Type-Options:
@@ -35,13 +35,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '3,8'
+      - '1,25'
       X-Request-Id:
-      - d3988c7d-5380-4a92-b42d-ebc1f5427c48
+      - 4ee5ec8a-fa13-4a50-8059-9cffa097c5ff
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '802'
+      - '801'
       Connection:
       - keep-alive
     body:
@@ -50,7 +50,56 @@ http_interactions:
         States","sex":"M","premium":false,"created_at":"2015-04-16T16:24:17Z","updated_at":"2017-12-25T00:00:07Z","badge_type_id":0,"profile_medium":"https://graph.facebook.com/10155515138087812/picture?height=256\u0026width=256","profile":"https://graph.facebook.com/10155515138087812/picture?height=256\u0026width=256","friend":null,"follower":null,"email":"adam.n.conway@gmail.com","follower_count":13,"friend_count":15,"mutual_friend_count":0,"athlete_type":0,"date_preference":"%m/%d/%Y","measurement_preference":"feet","clubs":[{"id":176219,"resource_state":2,"name":"Pooping
         Protips","profile_medium":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/3798854/1/medium.jpg","profile":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/3798854/1/large.jpg","cover_photo":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/4521871/1/large.jpg","cover_photo_small":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/176219/4521871/1/small.jpg","sport_type":"cycling","city":"Oakland","state":"California","country":"United
         States","private":false,"member_count":57,"featured":false,"verified":false,"url":"poopingprotips","membership":"member","admin":false,"owner":false},{"id":207668,"resource_state":2,"name":"Toolbox
-        For Strava","profile_medium":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555276/1/medium.jpg","profile":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555276/1/large.jpg","cover_photo":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555299/2/large.jpg","cover_photo_small":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555299/2/small.jpg","sport_type":"cycling","city":"","state":"","country":"Italia","private":false,"member_count":31562,"featured":false,"verified":false,"url":"stravatoolbox","membership":"member","admin":false,"owner":false}],"ftp":null,"weight":72.5748,"bikes":[{"id":"b4085148","primary":true,"name":"Serotta","resource_state":2,"distance":2967428.0}],"shoes":[],"subscription_permissions":[]}'
+        For Strava","profile_medium":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555276/1/medium.jpg","profile":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555276/1/large.jpg","cover_photo":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555299/2/large.jpg","cover_photo_small":"https://dgalywyr863hv.cloudfront.net/pictures/clubs/207668/4555299/2/small.jpg","sport_type":"cycling","city":"","state":"","country":"Italia","private":false,"member_count":31581,"featured":false,"verified":false,"url":"stravatoolbox","membership":"member","admin":false,"owner":false}],"ftp":null,"weight":72.5748,"bikes":[{"id":"b4085148","primary":true,"name":"Serotta","resource_state":2,"distance":2967428.0}],"shoes":[],"subscription_permissions":[]}'
     http_version: 
-  recorded_at: Thu, 10 May 2018 15:50:56 GMT
+  recorded_at: Thu, 10 May 2018 21:27:12 GMT
+- request:
+    method: get
+    uri: https://www.strava.com/api/v3/athletes/8722083/stats?access_token=<STRAVA_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 10 May 2018 21:27:12 GMT
+      Etag:
+      - W/"eb99b8f0c25fd60c40c64fc0fe538119"
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '600,30000'
+      X-Ratelimit-Usage:
+      - '2,26'
+      X-Request-Id:
+      - 71014252-19f0-425b-ab52-7d1ecf2d8a3f
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '301'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"biggest_ride_distance":173521.0,"biggest_climb_elevation_gain":1119.4,"recent_ride_totals":{"count":13,"distance":127467.8994140625,"moving_time":22052,"elapsed_time":23527,"elevation_gain":520.0,"achievement_count":32},"recent_run_totals":{"count":0,"distance":0.0,"moving_time":0,"elapsed_time":0,"elevation_gain":0.0,"achievement_count":0},"recent_swim_totals":{"count":0,"distance":0.0,"moving_time":0,"elapsed_time":0,"elevation_gain":0.0,"achievement_count":0},"ytd_ride_totals":{"count":37,"distance":471820,"moving_time":81940,"elapsed_time":100369,"elevation_gain":3717},"ytd_run_totals":{"count":0,"distance":0,"moving_time":0,"elapsed_time":0,"elevation_gain":0},"ytd_swim_totals":{"count":0,"distance":0,"moving_time":0,"elapsed_time":0,"elevation_gain":0},"all_ride_totals":{"count":103,"distance":3247807,"moving_time":514399,"elapsed_time":641211,"elevation_gain":32764},"all_run_totals":{"count":0,"distance":0,"moving_time":0,"elapsed_time":0,"elevation_gain":0},"all_swim_totals":{"count":0,"distance":0,"moving_time":0,"elapsed_time":0,"elevation_gain":0}}'
+    http_version: 
+  recorded_at: Thu, 10 May 2018 21:27:12 GMT
 recorded_with: VCR 4.0.0
