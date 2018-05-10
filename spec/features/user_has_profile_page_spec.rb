@@ -1,7 +1,7 @@
 require "rails_helper"
 
-describe 'user sees last n rides' do
-  scenario 'they log in and see the homepage with their rides' do
+describe 'user sees profile information' do
+  scenario 'they log in and visit /profile to see profile info' do
     VCR.use_cassette("Seeing-profile-page") do
       user = create(:user)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
@@ -10,19 +10,11 @@ describe 'user sees last n rides' do
       expect(current_path).to eq('/profile')
       expect(page).to have_content('Your profile information')
 
-      expect(page).to have_css(".first_name")
-      expect(page).to have_css(".last_name")
-      expect(page).to have_css(".city")
-      expect(page).to have_css(".state")
-      expect(page).to have_css(".created_at")
-      expect(page).to have_css(".follower_count")
+      expect(page).to have_css(".name")
+      expect(page).to have_css(".location")
+      expect(page).to have_css(".profile_creation")
       expect(page).to have_css(".friend_count")
-      within(first('.club')) do
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".member_count")
-        expect(page).to have_css(".sport_type")
-        expect(page).to have_css(".club_link")
-      end
+      expect(page).to have_css(".follower_count")
     end
   end
 end
